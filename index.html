@@ -54,7 +54,64 @@
             </a>
           </li>
         </ul>
-      </div>
+
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="page-header__menu-icon" width="40px" height="40px">
+            <use href="./images/icons_sprite.svg#icon-menu"></use>
+          </svg>
+        </button>
+
+
+        
+<div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="page-header__menu-icon" width="40px" height="40px">
+          <use href="./images/icons_sprite.svg#icon-menu-close"></use>
+        </svg>
+      </button>
+
+  <ul class="menu-container__list">
+            <li class="menu-container__item">
+              <a class="menu-container__link site-nav__link--active" href="./index.html">Студия</a>
+            </li>
+            <li class="menu-container__item">
+              <a class="menu-container__link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="menu-container__item"><a class="menu-container__link" href="">Контакты</a></li>
+    </ul>
+
+   <ul class="menu-container__contact-list">
+          <li class="menu-container__contact-item">
+            <a class="contacts-list__link1" href="mailto:info@devstudio.com">
+
+              <span> info@devstudio.com </span>
+            </a>
+          </li>
+          <li class="menu-container__contact-item">
+            <a class="contacts-list__link1" href="tel:+380961111111">
+
+              <span> +38 096 111 11 11 </span>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="menu-container__social-list">
+          <li class="menu-container__social-item">
+            <a href="">Instagram</a>
+          </li>
+          <li class="menu-container__social-item">
+            <a href="">Twitter</a>
+          </li>
+          <li class="menu-container__social-item">
+            <a href="">Facebook</a>
+          </li>
+          <li class="menu-container__social-item">
+            <a href="">LinkedIn</a>
+          </li>
+        </ul>
+
+</div>
+
     </header>
 
     <!-- Уникальный контент страницы-->
@@ -526,5 +583,12 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+        <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
