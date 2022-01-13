@@ -1,0 +1,14 @@
+.logo {
+  color: var(--color-accent);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.logo__second {
+  color: var(--color-black);
+}
+
+.logo__second--inversed {
+  color: var(--color-white);
+}

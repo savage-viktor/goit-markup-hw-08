@@ -1,0 +1,149 @@
+.form {
+  text-align: center;
+}
+
+.form__header {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  margin-bottom: 12px;
+}
+
+.form__label {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  margin-bottom: 10px;
+  color: var(--color-secondary-text);
+}
+
+.form__input-box {
+  position: relative;
+  margin-top: 4px;
+}
+
+.form__input-field {
+  @extend %site-animation;
+
+  width: 100%;
+  outline: none;
+
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+
+  font-size: 16px;
+
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 42px;
+}
+
+.follow-us__input-field {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding-left: 15px;
+  width: 358px;
+  height: 50px;
+  background-color: transparent;
+  margin-right: 12px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.form__input-box:hover > .form__icon,
+.form__input-field:focus + .form__icon {
+  fill: var(--color-accent);
+}
+
+.form__input-field:focus,
+.form__input-box:hover > .form__input-field {
+  border: 1px solid var(--color-accent);
+}
+
+.form__icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  @extend %site-animation;
+}
+
+.form__comment {
+  @extend %site-animation;
+
+  resize: none;
+  outline: none;
+
+  height: 120px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+
+  margin-top: 4px;
+  margin-bottom: 20px;
+  padding: 12px 16px;
+
+  &:focus,
+  &:hover {
+    border: 1px solid var(--color-accent);
+  }
+
+  &::placeholder {
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.form__conditions {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  line-height: 1.71;
+  color: var(--color-secondary-text);
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.form__checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.form__checkbox:focus ~ .form__checkbox-icon {
+  outline: 2px solid var(--color-black);
+}
+
+.form__checkbox:checked ~ .form__checkbox-icon {
+  background-color: var(--color-accent);
+  border: var(--color-accent);
+  fill: var(--color-white);
+  box-sizing: content-box;
+}
+
+.form__checkbox-icon {
+  @extend %site-animation;
+
+  margin-right: 7px;
+  border: 2px solid var(--color-black);
+  border-radius: 2px;
+  background-color: var(--color-white);
+  fill: transparent;
+}
+
+.form__link-order {
+  text-decoration-line: underline;
+  color: var(--color-accent);
+}
