@@ -5,11 +5,7 @@
 }
 
 .page-footer__box {
-  display: flex;
-}
-
-.page-footer__contact-box {
-  margin-right: 70px;
+  text-align: center;
 }
 
 .page-footer__logo {
@@ -60,7 +56,7 @@
 }
 
 .follow-us__list {
-  display: flex;
+  display: inline-flex;
   list-style: none;
 }
 
@@ -86,6 +82,26 @@
   }
 }
 
-.follow-us--positioned-right {
-  margin-left: auto;
+@media screen and (min-width: 768px) {
+  .page-footer__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .follow-us--positioned-right {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-footer__contact-box {
+    margin-right: 70px;
+  }
+
+  .follow-us--positioned-right {
+    display: inline-block;
+    margin-left: auto;
+    width: 575px;
+  }
 }

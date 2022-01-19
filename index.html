@@ -54,64 +54,56 @@
             </a>
           </li>
         </ul>
-
         <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
           <svg class="page-header__menu-icon" width="40px" height="40px">
             <use href="./images/icons_sprite.svg#icon-menu"></use>
           </svg>
         </button>
-
-
-        
-<div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
-        <svg class="page-header__menu-icon" width="40px" height="40px">
-          <use href="./images/icons_sprite.svg#icon-menu-close"></use>
-        </svg>
-      </button>
-
-  <ul class="menu-container__list">
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-toggle js-close-menu">
+            <svg class="page-header__menu-icon" width="40px" height="40px">
+              <use href="./images/icons_sprite.svg#icon-menu-close"></use>
+            </svg>
+          </button>
+          <ul class="menu-container__list">
             <li class="menu-container__item">
               <a class="menu-container__link site-nav__link--active" href="./index.html">Студия</a>
             </li>
             <li class="menu-container__item">
               <a class="menu-container__link" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="menu-container__item"><a class="menu-container__link" href="">Контакты</a></li>
-    </ul>
-
-   <ul class="menu-container__contact-list">
-          <li class="menu-container__contact-item">
-            <a class="contacts-list__link1" href="mailto:info@devstudio.com">
-
-              <span> info@devstudio.com </span>
-            </a>
-          </li>
-          <li class="menu-container__contact-item">
-            <a class="contacts-list__link1" href="tel:+380961111111">
-
-              <span> +38 096 111 11 11 </span>
-            </a>
-          </li>
-        </ul>
-
-        <ul class="menu-container__social-list">
-          <li class="menu-container__social-item">
-            <a href="">Instagram</a>
-          </li>
-          <li class="menu-container__social-item">
-            <a href="">Twitter</a>
-          </li>
-          <li class="menu-container__social-item">
-            <a href="">Facebook</a>
-          </li>
-          <li class="menu-container__social-item">
-            <a href="">LinkedIn</a>
-          </li>
-        </ul>
-
-</div>
-
+            <li class="menu-container__item">
+              <a class="menu-container__link" href="">Контакты</a>
+            </li>
+          </ul>
+          <ul class="menu-container__contact-list">
+            <li class="menu-container__contact-item">
+              <a class="contacts-list__link1" href="mailto:info@devstudio.com">
+                <span> info@devstudio.com </span>
+              </a>
+            </li>
+            <li class="menu-container__contact-item">
+              <a class="contacts-list__link1" href="tel:+380961111111">
+                <span> +38 096 111 11 11 </span>
+              </a>
+            </li>
+          </ul>
+          <ul class="menu-container__social-list">
+            <li class="menu-container__social-item">
+              <a href="">Instagram</a>
+            </li>
+            <li class="menu-container__social-item">
+              <a href="">Twitter</a>
+            </li>
+            <li class="menu-container__social-item">
+              <a href="">Facebook</a>
+            </li>
+            <li class="menu-container__social-item">
+              <a href="">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
 
     <!-- Уникальный контент страницы-->
@@ -192,52 +184,44 @@
         <div class="container">
           <ul class="feature-list">
             <li class="feature-card">
-              <svg class="feature-card__icon" height="120px">
-                <use
-                  href="./images/icons_sprite.svg#icon-features-antenna"
-                  width="70px"
-                  height="70px"
-                ></use>
-              </svg>
+              <div class="feature-card__icon-box">
+                <svg class="feature-card__icon" width="70px" height="70px">
+                  <use href="./images/icons_sprite.svg#icon-features-antenna"></use>
+                </svg>
+              </div>
               <h3 class="feature-card__title">Внимание к деталям</h3>
               <p class="feature-card__discription">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
             <li class="feature-card">
-              <svg class="feature-card__icon" height="120px">
-                <use
-                  href="./images/icons_sprite.svg#icon-features-clock"
-                  width="70px"
-                  height="70px"
-                ></use>
-              </svg>
+              <div class="feature-card__icon-box">
+                <svg class="feature-card__icon" width="70px" height="70px">
+                  <use href="./images/icons_sprite.svg#icon-features-clock"></use>
+                </svg>
+              </div>
               <h3 class="feature-card__title">Пунктуальность</h3>
               <p class="feature-card__discription">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
             <li class="feature-card">
-              <svg class="feature-card__icon" height="120px">
-                <use
-                  href="./images/icons_sprite.svg#icon-features-diagram"
-                  width="70px"
-                  height="70px"
-                ></use>
-              </svg>
+              <div class="feature-card__icon-box">
+                <svg class="feature-card__icon" width="70px" height="70px">
+                  <use href="./images/icons_sprite.svg#icon-features-diagram"></use>
+                </svg>
+              </div>
               <h3 class="feature-card__title">Планирование</h3>
               <p class="feature-card__discription">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
             <li class="feature-card">
-              <svg class="feature-card__icon" height="120px">
-                <use
-                  href="./images/icons_sprite.svg#icon-features-astronaut"
-                  width="70px"
-                  height="70px"
-                ></use>
-              </svg>
+              <div class="feature-card__icon-box">
+                <svg class="feature-card__icon" width="70px" height="70px">
+                  <use href="./images/icons_sprite.svg#icon-features-astronaut"></use>
+                </svg>
+              </div>
               <h3 class="feature-card__title">Современные технологии</h3>
               <p class="feature-card__discription">
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
@@ -293,11 +277,11 @@
           <ul class="team__list">
             <li class="card-team">
               <img
+                srcset="./images/team_dem.jpg 1x, ./images/team_dem@2x.jpg 2x"
                 src="./images/team_dem.jpg"
                 class="card-team__photo"
-                width="270"
-                height="260"
                 alt="фото сотрудника"
+                width="450"
               />
               <h3 class="card-team__title">Игорь Демьяненко</h3>
               <p class="card-team__discription">Product Designer</p>
@@ -334,11 +318,11 @@
             </li>
             <li class="card-team">
               <img
+                srcset="./images/team_rep.jpg 1x, ./images/team_rep@2x.jpg 2x"
                 src="./images/team_rep.jpg"
                 class="card-team__photo"
-                width="270"
-                height="260"
                 alt="фото сотрудника"
+                width="450"
               />
               <h3 class="card-team__title">Ольга Репина</h3>
               <p class="card-team__discription">Frontend Developer</p>
@@ -375,11 +359,11 @@
             </li>
             <li class="card-team">
               <img
+                srcset="./images/team_tar.jpg 1x, ./images/team_tar@2x.jpg 2x"
                 src="./images/team_tar.jpg"
                 class="card-team__photo"
-                width="270"
-                height="260"
                 alt="фото сотрудника"
+                width="450"
               />
               <h3 class="card-team__title">Николай Тарасов</h3>
               <p class="card-team__discription">Marketing</p>
@@ -416,12 +400,13 @@
             </li>
             <li class="card-team">
               <img
+                srcset="./images/team_erm.jpg 1x, ./images/team_erm@2x.jpg 2x"
                 src="./images/team_erm.jpg"
                 class="card-team__photo"
-                width="270"
-                height="260"
                 alt="фото сотрудника"
+                width="450"
               />
+
               <h3 class="card-team__title">Михаил Ермаков</h3>
               <p class="card-team__discription">UI Designer</p>
               <ul class="card-team__social-list">
@@ -583,7 +568,7 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
-        <script
+    <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="

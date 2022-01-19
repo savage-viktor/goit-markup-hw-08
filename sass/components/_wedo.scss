@@ -1,5 +1,6 @@
 .wedo {
   padding-top: 0px;
+  display: none;
 }
 
 .wedo__list {
@@ -31,4 +32,10 @@
   color: var(--color-white);
 
   background-color: rgba(47, 48, 58, 0.8);
+}
+
+@media screen and (min-width: 1200px) {
+  .wedo {
+    display: block;
+  }
 }
