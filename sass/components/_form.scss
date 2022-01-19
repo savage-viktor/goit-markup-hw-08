@@ -42,16 +42,6 @@
   padding-left: 42px;
 }
 
-.follow-us__input-field {
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  padding-left: 15px;
-  width: 358px;
-  height: 50px;
-  background-color: transparent;
-  margin-right: 12px;
-  color: rgba(255, 255, 255, 0.6);
-}
-
 .form__input-box:hover > .form__icon,
 .form__input-field:focus + .form__icon {
   fill: var(--color-accent);
