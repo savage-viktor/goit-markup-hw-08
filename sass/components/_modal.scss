@@ -24,13 +24,17 @@
   left: 50%;
   top: 50%;
   padding: 40px;
-  width: 528px;
+  width: 450px;
   background: var(--color-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--effect-time) var(--effect-function);
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+  }
 }
 
 .modal-window__close {

@@ -212,10 +212,17 @@ img {
   margin-bottom: 30px;
   line-height: 1.71;
   color: var(--color-secondary-text);
+  font-size: 12px;
 }
 
 .form__conditions:hover {
   cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+  .form__conditions {
+    font-size: 14px;
+  }
 }
 
 .form__checkbox {
@@ -242,7 +249,7 @@ img {
 }
 
 .form__checkbox-icon {
-  margin-right: 7px;
+  margin-right: 8px;
   border: 2px solid var(--color-black);
   border-radius: 2px;
   background-color: var(--color-white);
@@ -481,6 +488,7 @@ img {
   width: 100vw;
   height: 93vh;
   background-color: white;
+  z-index: 5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1237,7 +1245,7 @@ img {
   left: 50%;
   top: 50%;
   padding: 40px;
-  width: 528px;
+  width: 450px;
   background: var(--color-white);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1248,6 +1256,12 @@ img {
   transition: -webkit-transform var(--effect-time) var(--effect-function);
   transition: transform var(--effect-time) var(--effect-function);
   transition: transform var(--effect-time) var(--effect-function), -webkit-transform var(--effect-time) var(--effect-function);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-window {
+    width: 528px;
+  }
 }
 
 .modal-window__close {

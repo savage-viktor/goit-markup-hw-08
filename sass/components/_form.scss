@@ -96,8 +96,14 @@
   line-height: 1.71;
   color: var(--color-secondary-text);
 
+  font-size: 12px;
+
   &:hover {
     cursor: pointer;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
   }
 }
 
@@ -126,7 +132,7 @@
 .form__checkbox-icon {
   @extend %site-animation;
 
-  margin-right: 7px;
+  margin-right: 8px;
   border: 2px solid var(--color-black);
   border-radius: 2px;
   background-color: var(--color-white);
