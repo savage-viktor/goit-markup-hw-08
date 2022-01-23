@@ -927,11 +927,27 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   list-style: none;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .buttons-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .buttons-list {
+    margin-bottom: 35px;
+  }
+}
+
+.buttons-list__item {
+  margin-bottom: 15px;
 }
 
 .buttons-list__item:not(:last-child) {
@@ -945,19 +961,27 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   list-style: none;
+  margin: -15px;
 }
 
 .portfolio-card {
-  width: calc((100% - 60px) / 3);
-  margin-bottom: 30px;
+  width: 100%;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  margin: 15px;
 }
 
-.portfolio-card:not(:nth-child(3n)) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .portfolio-card {
+    width: calc((100% - 60px) / 2);
+  }
 }
 
-.portfolio-card:nth-last-child(-n + 3) {
-  margin-bottom: 0px;
+@media screen and (min-width: 1200px) {
+  .portfolio-card {
+    width: calc((100% - 90px) / 3);
+  }
 }
 
 .portfolio-card__link:hover, .portfolio-card__link:focus {
@@ -979,6 +1003,8 @@ img {
 .portfolio-card__image {
   position: relative;
   overflow: hidden;
+  width: calc(100% + 2px);
+  left: -1px;
 }
 
 .portfolio-card__about {
@@ -1008,9 +1034,6 @@ img {
 
 .portfolio-card__text {
   padding: 20px 24px;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
 }
 
 .portfolio-card__title {
